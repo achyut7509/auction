@@ -1,0 +1,118 @@
+{
+    "name": "Room",
+    "type": "object",
+    "properties": {
+      "room_code": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "host_name": {
+        "type": "string"
+      },
+      "logo_url": {
+        "type": "string"
+      },
+      "banner_url": {
+        "type": "string"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "LOBBY",
+          "LIVE",
+          "PAUSED",
+          "COMPLETED"
+        ],
+        "default": "LOBBY"
+      },
+      "currency": {
+        "type": "string",
+        "default": "\u20b9"
+      },
+      "starting_purse": {
+        "type": "number",
+        "default": 20000000
+      },
+      "base_bid": {
+        "type": "number",
+        "default": 500000
+      },
+      "bid_increment": {
+        "type": "number",
+        "default": 500000
+      },
+      "timer_seconds": {
+        "type": "number",
+        "default": 10
+      },
+      "auto_timer": {
+        "type": "boolean",
+        "default": true
+      },
+      "timer_reset_after_bid": {
+        "type": "boolean",
+        "default": true
+      },
+      "sound_enabled": {
+        "type": "boolean",
+        "default": true
+      },
+      "allow_unsold": {
+        "type": "boolean",
+        "default": true
+      },
+      "reauction_unsold": {
+        "type": "boolean",
+        "default": true
+      },
+      "chat_enabled": {
+        "type": "boolean",
+        "default": true
+      },
+      "spectator_reactions": {
+        "type": "boolean",
+        "default": true
+      },
+      "privacy": {
+        "type": "string",
+        "enum": [
+          "PUBLIC",
+          "PRIVATE"
+        ],
+        "default": "PUBLIC"
+      },
+      "current_player_id": {
+        "type": "string"
+      },
+      "current_bid": {
+        "type": "number",
+        "default": 0
+      },
+      "current_bidder_team_id": {
+        "type": "string"
+      },
+      "current_bidder_user_id": {
+        "type": "string"
+      },
+      "timer_deadline": {
+        "type": "string"
+      },
+      "timer_paused": {
+        "type": "boolean",
+        "default": false
+      },
+      "current_set": {
+        "type": "string"
+      }
+    },
+    "required": [
+      "room_code",
+      "name",
+      "host_name"
+    ]
+  }

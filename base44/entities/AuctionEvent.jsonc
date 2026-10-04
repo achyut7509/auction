@@ -1,0 +1,22 @@
+{
+  "name": "AuctionEvent",
+  "type": "object",
+  "properties": {
+    "room_id": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "data": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "room_id",
+    "type"
+  ]
+}

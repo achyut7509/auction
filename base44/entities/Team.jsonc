@@ -1,0 +1,58 @@
+{
+    "name": "Team",
+    "type": "object",
+    "properties": {
+      "room_id": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "short_code": {
+        "type": "string"
+      },
+      "logo_url": {
+        "type": "string"
+      },
+      "color": {
+        "type": "string",
+        "default": "#1e3a8a"
+      },
+      "owner_id": {
+        "type": "string"
+      },
+      "owner_name": {
+        "type": "string"
+      },
+      "starting_purse": {
+        "type": "number"
+      },
+      "remaining_purse": {
+        "type": "number"
+      },
+      "max_players": {
+        "type": "number",
+        "default": 18
+      },
+      "min_players": {
+        "type": "number",
+        "default": 0
+      },
+      "overseas_limit": {
+        "type": "number",
+        "default": 8
+      },
+      "total_spent": {
+        "type": "number",
+        "default": 0
+      },
+      "players_count": {
+        "type": "number",
+        "default": 0
+      }
+    },
+    "required": [
+      "room_id",
+      "name"
+    ]
+  }

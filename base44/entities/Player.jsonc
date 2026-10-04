@@ -1,0 +1,83 @@
+{
+    "name": "Player",
+    "type": "object",
+    "properties": {
+      "room_id": {
+        "type": "string"
+      },
+      "name": {
+        "type": "string"
+      },
+      "display_name": {
+        "type": "string"
+      },
+      "photo_url": {
+        "type": "string"
+      },
+      "country": {
+        "type": "string"
+      },
+      "nationality": {
+        "type": "string"
+      },
+      "role": {
+        "type": "string"
+      },
+      "batting_style": {
+        "type": "string"
+      },
+      "bowling_style": {
+        "type": "string"
+      },
+      "player_type": {
+        "type": "string"
+      },
+      "base_price": {
+        "type": "number",
+        "default": 0
+      },
+      "category": {
+        "type": "string"
+      },
+      "set_name": {
+        "type": "string"
+      },
+      "age": {
+        "type": "number"
+      },
+      "jersey_number": {
+        "type": "number"
+      },
+      "description": {
+        "type": "string"
+      },
+      "stats": {
+        "type": "object"
+      },
+      "status": {
+        "type": "string",
+        "enum": [
+          "AVAILABLE",
+          "CURRENT",
+          "SOLD",
+          "UNSOLD",
+          "SKIPPED"
+        ],
+        "default": "AVAILABLE"
+      },
+      "sold_to_team_id": {
+        "type": "string"
+      },
+      "sold_price": {
+        "type": "number"
+      },
+      "order_index": {
+        "type": "number",
+        "default": 0
+      }
+    },
+    "required": [
+      "room_id",
+      "name"
+    ]
+  }
